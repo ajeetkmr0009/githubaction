@@ -1,4 +1,4 @@
-name: hello-world
+name: python installation
 on: push
 jobs:
   Installations:
