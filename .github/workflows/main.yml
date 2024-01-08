@@ -20,7 +20,7 @@ jobs:
         run: echo "Checking version..."   
 
       - name: Build with Gradle
-      run: ./gradlew buildl  
+         run:./gradlew build
 
 
           
