@@ -1,0 +1,26 @@
+name: ci-cd
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: repo check
+        uses: actions/checkout@v2
+        
+      - name: Java Environment Stup
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '17'
+      
+      - name: Version Check
+        run: echo "Checking version..."   
+
+      - name: Build with Maven
+        run: mvn clean install  
+
+
+          
