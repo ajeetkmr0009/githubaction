@@ -1,4 +1,4 @@
-name: ci-cd
+name: ci
 on:
   push:
     branches:
@@ -19,8 +19,8 @@ jobs:
       - name: Version Check
         run: echo "Checking version..."   
 
-      - name: Build with Maven
-        run: mvn clean install  
+      - name: Build with Gradle
+        run: ./gradlew build  
 
 
           
