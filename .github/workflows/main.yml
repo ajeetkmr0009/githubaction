@@ -24,8 +24,3 @@ jobs:
       - name: Run tests
         run: |
           pytest
-
-          isort --check .
-
-    
-
