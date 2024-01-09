@@ -21,11 +21,6 @@ jobs:
           pip install -r requirements.txt
 
 
-      - name: Code quality checks
+      - name: Run tests
         run: |
-          flake8 .
-          black --check .
-          isort --check .
-
-    
-
+          pytest
