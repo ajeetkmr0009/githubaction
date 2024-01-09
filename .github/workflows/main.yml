@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   Build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: repo check
         uses: actions/checkout@v2
